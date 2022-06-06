@@ -1,0 +1,9 @@
+https://laravel.com/docs/9.x/installation#installation-via-composer
+https://v1.tailwindcss.com/docs/installation
+https://www.youtube.com/embed/MFh0Fd7BsjE
+
+composer create-project laravel/laravel posty
+php artisan serve
+
+npm install tailwindcss@^1
+npm run dev
