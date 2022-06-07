@@ -7,3 +7,15 @@ php artisan serve
 
 npm install tailwindcss@^1
 npm run dev
+
+
+php artisan migrate
+php artisan make:migration add_username_to_users_table
+
+php artisan migrate:rollback
+
+
+==========================================
+
+php artisan make:controller RegisterController
+php artisan make:controller Auth\RegisterController
