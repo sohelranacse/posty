@@ -1,6 +1,8 @@
 https://laravel.com/docs/9.x/installation#installation-via-composer
 https://v1.tailwindcss.com/docs/installation
+
 https://www.youtube.com/embed/MFh0Fd7BsjE
+https://github.com/codecourse/posty-traversy-media
 
 composer create-project laravel/laravel posty
 php artisan serve
@@ -19,3 +21,11 @@ php artisan migrate:rollback
 
 php artisan make:controller RegisterController
 php artisan make:controller Auth\RegisterController
+
+
+php artisan make:model Post -help
+php artisan make:model Post -m -f
+php artisan migrate
+
+php artisan tinker
+App\Models\Post::factory()->times(200)->create(['user_id' => 3]);
