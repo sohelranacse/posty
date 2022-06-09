@@ -29,3 +29,7 @@ php artisan migrate
 
 php artisan tinker
 App\Models\Post::factory()->times(200)->create(['user_id' => 3]);
+
+
+php artisan make:migration create_likes_table --create=likes
+php artisan make:model Like
